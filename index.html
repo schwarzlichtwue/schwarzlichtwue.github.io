@@ -1,0 +1,21 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+<div id="content" class="posts container">
+	<div class="row">
+		<h1 id="timeline">Timeline</h1>
+		<div class="center">
+			{% include paginator.html %}
+		</div>
+	</div>
+	{% for post in paginator.posts %}
+	{% include post.html %}
+	{% endfor %}
+
+	<div class="center">
+		{% include paginator.html %}
+	</div>
+</div>
