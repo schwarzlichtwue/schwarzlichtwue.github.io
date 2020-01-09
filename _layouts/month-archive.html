@@ -2,7 +2,7 @@
 layout: sub
 ---
 <div id="content" class="posts">
-	<h1>Tweets from {{ page.date | date: " %B %Y" }}</h1>
+	<h1>Tweets des Monats {{ page.date | date: "%B %Y" }}</h1>
 	{% for post in page.posts %}
 	{% include post.html %}
 	{% endfor %}

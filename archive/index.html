@@ -1,0 +1,41 @@
+---
+layout: sub
+---
+{% capture years %}
+ {% for post in site.posts %}
+  {% assign currentdate = post.date | date: "%Y" %}
+  {{ currentdate }}
+ {% endfor %}
+{% endcapture %}
+
+<!-- Sort -->
+{% assign sortedyears = years | split:' ' | sort %}
+
+<!-- Uniq -->
+{% assign uniqueyears = '' | split: ',' %}
+<!-- https://stackoverflow.com/questions/34242743/distinct-list-of-tags-in-jekyll/34243302#34243302 -->
+{% for year in sortedyears %}
+  {% unless year == previous %}
+    {% assign uniqueyears  = uniqueyears | push: year %}
+  {% endunless %}
+  {% assign previous = year %}
+{% endfor %}
+
+
+<div class="container">
+	<div class="row">
+		<h1>Archiv</h1>
+		<p>
+			Schwarzlicht Würzburg hat zu folgenden Themen getwittert:
+		</p>
+	</div>
+	<div class="row">
+		{% for year in uniqueyears %}
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					{{ year }}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>

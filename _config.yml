@@ -17,7 +17,7 @@ title: Schwarzlicht Würzburg
 email: schwarzlicht@riseup.net
 description: >- # this means to ignore newlines until "baseurl:"
   Newsticker für Veranstaltungen und Mobilisierungen im Raum #Würzburg
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://schwarzlichtwue.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: schwarzlichtwue
 github_username:  schwarzlichtwue
@@ -34,13 +34,15 @@ paginate: 16
 jekyll-archives:
   enabled: all
   permalinks:
-    year:     '/archive/year/:year/'
-    month:    '/archive/month/:year-:month/'
+    year:     '/archive/:year/'
+    month:    '/archive/:year-:month/'
+    day:    '/archive/:year-:month-:day/'
     category: '/t/:name/'
   layouts:
-#    year: year-archive
-#    month: month-archive
     category: category-archive
+    year: year-archive
+    month: month-archive
+    day: day-archive
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
