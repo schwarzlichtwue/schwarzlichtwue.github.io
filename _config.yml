@@ -32,7 +32,7 @@ plugins:
 paginate: 16
 
 jekyll-archives:
-  enabled: all
+  enabled: [categories, year, month]
   permalinks:
     year:     '/archive/:year/'
     month:    '/archive/:year-:month/'
