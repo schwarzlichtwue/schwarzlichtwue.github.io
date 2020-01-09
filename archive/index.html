@@ -1,41 +1,72 @@
 ---
 layout: sub
 ---
-{% capture years %}
- {% for post in site.posts %}
-  {% assign currentdate = post.date | date: "%Y" %}
-  {{ currentdate }}
- {% endfor %}
-{% endcapture %}
 
-<!-- Sort -->
-{% assign sortedyears = years | split:' ' | sort %}
-
-<!-- Uniq -->
-{% assign uniqueyears = '' | split: ',' %}
-<!-- https://stackoverflow.com/questions/34242743/distinct-list-of-tags-in-jekyll/34243302#34243302 -->
-{% for year in sortedyears %}
-  {% unless year == previous %}
-    {% assign uniqueyears  = uniqueyears | push: year %}
-  {% endunless %}
-  {% assign previous = year %}
-{% endfor %}
-
+<!-- https://zpbappi.com/jekyll-with-tags-archive-and-comments-in-github-pages/ -->
+{% assign cYear = "" %}
+{% assign cMonth = "" %}
+{% assign posts = site.posts | sort: 'date' | reverse %}
+{% assign first = posts | first %}
+{% assign cMonthName = "" %}
+{% assign cMonthLink = "" %}
+{% assign cYearLink  = "" %}
+{% assign count = 0 %}
 
 <div class="container">
 	<div class="row">
 		<h1>Archiv</h1>
 		<p>
-			Schwarzlicht Würzburg hat zu folgenden Themen getwittert:
+			Schwarzlicht Würzburg hat in den folgenden Jahren/Monaten getwittert:
 		</p>
 	</div>
 	<div class="row">
-		{% for year in uniqueyears %}
-		<div class="col s6 m4 l2">
-			<div class="center card-panel white truncate">
-					{{ year }}
-			</div>
-		</div>
-		{% endfor %}
+		<ul class="collapsible expandable">
+			<li class="active">
+			{% for post in posts %}
+			  {% assign count = count | plus: 1 %}
+			  {% assign year = (post.date | date: '%Y') %}
+			  {% assign month = post.date | date: '%Y-%m' %}
+			  {% if year != cYear %}
+			    {% if cYear != "" %}
+							<a href="{{cMonthLink | prepend: "/archive" | prepend: site.baseurl}}">{{cMonthName}}</a>
+							({{count | minus: 1}})
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="active">
+			      {% assign count = 1 %}
+			    {% endif %}
+			    {% assign cYearLink = post.date | date: '/%Y' %}
+				<div class="collapsible-header">
+						<a href="{{cYearLink | prepend: "/archive" | prepend:
+								 site.baseurl}}">{{year}}</a>
+				</div>
+				<div class="collapsible-body">
+					<ul class="collection">
+						<li class="collection-item">
+			    {% assign cMonth = "" %}
+			    {% assign cYear = year %}
+			  {% endif %}
+		
+			  {% if month != cMonth %}
+			    {% if cMonth != "" %}
+						<a href="{{cMonthLink | prepend: "/archive" | prepend: site.baseurl}}">{{cMonthName}}</a>
+						({{count | minus: 1}})
+					</li>
+					<li class="collection-item">
+			      {% assign count = 1 %}
+			    {% endif %}
+			    {% assign cMonth = month %}
+			  {% endif %}
+			  {% assign cMonthName = post.date | date: '%B' %}
+			  {% assign cMonthLink = post.date | date: '/%Y-%m' %}
+			{% endfor %}
+						<a href="{{cMonthLink | prepend: "/archive" | prepend: site.baseurl}}">{{cMonthName}}</a> ({{count}})
+					</li>
+				</ul>
+			</li>
+		</ul>
+
 	</div>
 </div>
