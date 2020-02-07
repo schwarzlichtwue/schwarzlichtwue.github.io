@@ -4,6 +4,19 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+.collapsible-header {
+	font-weight: bolder;
+	font-family: 'Open Sans', sans-serif;
+}
+.collection-item a {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.card-title {
+	font-weight: bolder;
+	font-family: 'Open Sans', sans-serif;
+}
+
 h1 {
 	font-size: xx-large;
 	font-weight: bold;
@@ -55,12 +68,17 @@ h1 a {
 }
 
 .tag {
+	font-size: larger;
 	font-family: 'Open Sans', sans-serif;
 }
 
 
 .sl-red {
 	background-color: #7a001f;
+}
+
+.sl-red-text {
+	color: #7a001f;
 }
 
 .pagination li {

@@ -1,0 +1,99 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+<div id="content" class="container">
+	<div class="row">
+		<h1 id="gruppen">Gruppen</h1>
+		<div class="col s12">
+		<p>
+		Auf dieser Seite listen wir progressive Gruppen in und um
+		Würzburg.
+		</p>
+		</div>
+	</div>
+	<div class="row">
+		<h2 id="antira">AntiFa/AntiRa</h1>
+		<div class="col s12 m6">
+		{% capture title %}Antifa {% endcapture %}
+		{% capture link %}<a href="https://antifawuerzburg.blackblogs.org">Website</a>{% endcapture %}
+		{% capture description %}Antifa {% endcapture %}
+		{% capture image %} img/groups/antifa.jpg {% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image %}
+		</div>
+
+		<div class="col s12 m6">
+		{% capture title %}AK Rassismus{% endcapture %}
+		{% capture link %}<a href="https://antifa-wuerzburg.noblogs.org">Website</a>{% endcapture %}
+		{% capture description %}AK Rassismus{% endcapture %}
+		{% capture image %} img/groups/antifa.jpg {% endcapture %}
+		{% capture active %}false{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image %}
+		</div>
+	</div>
+	<div class="row">
+		<h2 id="klimaschutz">Klimaschutz</h1>
+		<div class="col s12 m6">
+		{% capture title %}FFF{% endcapture %}
+		{% capture link %}<a href="https://antifa-wuerzburg.noblogs.org">Website</a>{% endcapture %}
+		{% capture description %}Friday For Future {% endcapture %}
+		{% capture image %} img/groups/antifa.jpg {% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image %}
+		</div>
+	</div>
+
+	{% comment %}
+
+    Antifa
+    attac
+    DéjàWü e. V.
+    Ende Gelände Würzburg
+    EWO (Eat Well Organisation)
+    Femministischer Stammtisch Würzburg
+    Florakreis
+    foodsharing
+    Fridays For Future
+    Initiative Bleiberecht Würzburg
+    Keinhamehr
+    Kritische Einführungswoche Würzburg
+    Linksjugend solid
+    MediNetz Würzburg e.V.
+    mehr als 16a
+    MissMutig
+    Queer Pride Würzburg
+    Rote Hilfe
+    SDAJ
+    Seebrücke Würzburg
+    Stadtgärtner - Urban Gardening Würzburg
+    WATU - Würzburg aktiv für Tierrechte und Umweltschutz
+
+Schwerpunkt Universität:
+
+    AK Gender
+    Amnesty (Hochschulgruppe)
+    Campus LINKE. Würzburg
+    freies kritisches Seminar Psychologie
+    GEW Hochschulgruppe
+    Arbeitskreis kritische Jurist*innen
+    einige der Uni Referate
+
+Räume und Anlaufpunkte:
+
+    Buchladen Neuer Weg
+    Cairo, Jugendkulturhaus Würzburg
+    Freiraum
+    Immerhin
+    Kellerperle
+    Kult
+    miezekoze
+    Students House
+    Umsonstladen Luftschloss
+    WuF Zentrum
+
+{% endcomment%}
+
+</div>
