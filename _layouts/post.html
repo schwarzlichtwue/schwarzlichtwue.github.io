@@ -1,0 +1,32 @@
+---
+layout: sub
+---
+
+<div class="container">
+	<article class="post">
+		<header class="post-header">
+			<div class="post-meta">
+				<span class="post-date">{{ page.date | date: "%d.%m.%Y, %H:%M" }}</span>
+				<br>
+				<span class="post-category">
+					{% for tag in page.tags %}
+					{% include tag.html %}
+					{% endfor %}
+				</span>
+			</div>
+		</header>
+		<div class="row post-content">
+			{{ content }}
+		</div>
+		<div class="section">
+		<div class="row">
+			{% for post_media in page.media %}
+			{% include media.html %}
+			{% endfor %}
+		</div>
+		</div>
+		<div class="right">
+			<a href="{{ page.ref }}"><i class="fab fa-twitter"></i></a>
+		</div>
+	</article>
+</div>

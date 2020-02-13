@@ -1,0 +1,21 @@
+---
+layout: sub
+---
+
+<div class="container">
+	<div class="row">
+		<h1>Threads</h1>
+		<p>
+			Auflistung all unserer Threads.
+		</p>
+	</div>
+	<div class="row">
+		{% for post in site.posts %}
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/{{post.title}}.html">{{post.title}}</a>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
