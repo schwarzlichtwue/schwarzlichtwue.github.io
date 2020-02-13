@@ -31,18 +31,21 @@ plugins:
 
 paginate: 16
 
+permalink: /p/:title
+
 jekyll-archives:
-  enabled: [categories, year, month]
+  enabled: [tags, year, month]
   permalinks:
     year:     '/archive/:year/'
     month:    '/archive/:year-:month/'
-    day:    '/archive/:year-:month-:day/'
-    category: '/t/:name/'
+    #day:    '/archive/:year-:month-:day/'
+    tag: '/t/:name/'
   layouts:
-    category: category-archive
+    #category: category-archive
+    tag: tag-archive
     year: year-archive
     month: month-archive
-    day: day-archive
+    #day: day-archive
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

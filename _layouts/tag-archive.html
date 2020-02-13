@@ -1,0 +1,9 @@
+---
+layout: sub
+---
+<div id="content" class="container posts">
+	<h1>#{{ page.title }}</h1>
+	{% for post in page.posts %}
+	{% include post.html %}
+	{% endfor %}
+</div>
