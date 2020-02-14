@@ -4,6 +4,26 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+nav {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.logo-link {
+	color: #7a001f;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
+.logo {
+	color: #7a001f;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	display: inline-block;
+	font-size: 2.1rem;
+	padding: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .collapsible-header {
 	font-weight: bolder;
 	font-family: 'Open Sans', sans-serif;
