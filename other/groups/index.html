@@ -14,40 +14,190 @@ layout: sub
 		</p>
 		</div>
 	</div>
-	{% comment %}
 	<div class="row">
-		<h2 id="antira">AntiFa/AntiRa</h1>
-		<div class="col s12 m6">
-		{% capture title %}Antifa {% endcapture %}
-		{% capture link %}<a href="https://antifawuerzburg.blackblogs.org">Website</a>{% endcapture %}
+		<h2 id="antira">AntiFa/AntiRa</h2>
+		<div class="col s12 m6 l4">
+		{% capture title %}ANTIFA{% endcapture %}
+		{% capture link %}
+		<a href="https://antifawuerzburg.blackblogs.org"><i class="sl-red-text fas fa-globe fa-2x"></i></a>
+		<a href="https://twitter.com/antifa_wue"><i class="sl-red-text fab fa-twitter fa-2x"></i></a>
+		<a href="https://instagram.com/antifa_wue"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+		{% endcapture %}
 		{% capture description %}Antifa {% endcapture %}
-		{% capture image %} img/groups/antifa.jpg {% endcapture %}
+		{% capture image %} /img/groups/antifa/image.jpg {% endcapture %}
+		{% capture logo %} /img/groups/antifa/logo.png {% endcapture %}
 		{% capture active %}true{% endcapture %}
-		{% include group.html active=active title=title description=description link=link image=image %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
 		</div>
 
-		<div class="col s12 m6">
+		<div class="col s12 m6 l4">
+		{% capture title %}Florakreis{% endcapture %}
+		{% capture link %}
+		<a href="http://florakreis.blogsport.de/"><i class="sl-red-text fas fa-globe fa-2x"></i></a>
+		{% endcapture %}
+		{% capture description %}Florakreis{% endcapture %}
+		{% capture image %}null{% endcapture %}
+		{% capture logo %}null{% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
+		</div>
+
+		<div class="col s12 m6 l4">
 		{% capture title %}AK Rassismus{% endcapture %}
-		{% capture link %}<a href="https://antifa-wuerzburg.noblogs.org">Website</a>{% endcapture %}
+		{% capture link %}null{% endcapture %}
 		{% capture description %}AK Rassismus{% endcapture %}
-		{% capture image %} img/groups/antifa.jpg {% endcapture %}
+		{% capture image %} /img/groups/akr/image.jpg {% endcapture %}
+		{% capture logo %} /img/groups/akr/logo.png {% endcapture %}
 		{% capture active %}false{% endcapture %}
-		{% include group.html active=active title=title description=description link=link image=image %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
 		</div>
 	</div>
+
 	<div class="row">
-		<h2 id="klimaschutz">Klimaschutz</h1>
-		<div class="col s12 m6">
-		{% capture title %}FFF{% endcapture %}
-		{% capture link %}<a href="https://antifa-wuerzburg.noblogs.org">Website</a>{% endcapture %}
+		<h2 id="feminismus">Feminismus</h2>
+		<div class="col s12 m6 l4">
+		{% capture title %}MissMutig{% endcapture %}
+		{% capture link %}
+		<a href="https://instagram.com/missmutigwue"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+		<a href="https://www.facebook.com/MissMutig-448597675643037/"><i class="sl-red-text fab fa-facebook fa-2x"></i></a>
+		{% endcapture %}
+		{% capture description %}MissMutig{% endcapture %}
+		{% capture image %} /img/groups/missmutig/image.jpg {% endcapture %}
+		{% capture logo %} /img/groups/missmutig/logo.png {% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
+		</div>
+
+		<div class="col s12 m6 l4">
+		{% capture title %}Feministischer Stammtisch{% endcapture %}
+		{% capture link %}
+		<a href="https://instagram.com/femwue"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+		<a href="https://www.facebook.com/Fem.Stammtisch/"><i class="sl-red-text fab fa-facebook fa-2x"></i></a>
+		{% endcapture %}
+		{% capture description %}Fem Wue{% endcapture %}
+		{% capture image %} /img/groups/femstamm/image.jpg {% endcapture %}
+		{% capture logo %} /img/groups/femstamm/logo.png {% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
+		</div>
+
+		<div class="col s12 m6 l4">
+		{% capture title %}Queer Pride e.V.{% endcapture %}
+		{% capture link %}
+		<a href="https://instagram.com/femwue"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+		<a href="https://www.facebook.com/Fem.Stammtisch/"><i class="sl-red-text fab fa-facebook fa-2x"></i></a>
+		{% endcapture %}
+		{% capture description %}Fem Wue{% endcapture %}
+		{% capture image %} /img/groups/femstamm/image.jpg {% endcapture %}
+		{% capture logo %} /img/groups/femstamm/logo.png {% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
+		</div>
+	</div>
+
+	<div class="row">
+		<h2 id="solidarity">Solidarity</h2>
+		<div class="col s12 m6 l4">
+		{% capture title %}mehrals16a{% endcapture %}
+		{% capture link %}
+		<a href="https://instagram.com/missmutigwue"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+		<a href="https://www.facebook.com/MissMutig-448597675643037/"><i class="sl-red-text fab fa-facebook fa-2x"></i></a>
+		{% endcapture %}
+		{% capture description %}MissMutig{% endcapture %}
+		{% capture image %} /img/groups/missmutig/image.jpg {% endcapture %}
+		{% capture logo %} /img/groups/missmutig/logo.png {% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
+		</div>
+		<div class="col s12 m6 l4">
+		{% capture title %}Seebrücke{% endcapture %}
+		{% capture link %}
+		<a href="https://instagram.com/missmutigwue"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+		<a href="https://www.facebook.com/MissMutig-448597675643037/"><i class="sl-red-text fab fa-facebook fa-2x"></i></a>
+		{% endcapture %}
+		{% capture description %}MissMutig{% endcapture %}
+		{% capture image %} /img/groups/missmutig/image.jpg {% endcapture %}
+		{% capture logo %} /img/groups/missmutig/logo.png {% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
+		</div>
+		<div class="col s12 m6 l4">
+		{% capture title %}Initiative Bleiberecht{% endcapture %}
+		{% capture link %}
+		<a href="https://instagram.com/missmutigwue"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+		<a href="https://www.facebook.com/MissMutig-448597675643037/"><i class="sl-red-text fab fa-facebook fa-2x"></i></a>
+		{% endcapture %}
+		{% capture description %}MissMutig{% endcapture %}
+		{% capture image %} /img/groups/missmutig/image.jpg {% endcapture %}
+		{% capture logo %} /img/groups/missmutig/logo.png {% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
+		</div>
+		<div class="col s12 m6 l4">
+		{% capture title %}Rojava Bündnis{% endcapture %}
+		{% capture link %}null{% endcapture %}
+		{% capture description %}Rojava{% endcapture %}
+		{% capture image %} /img/groups/rojava/image.jpg {% endcapture %}
+		{% capture logo %}null{% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
+		</div>
+	</div>
+
+	<div class="row">
+		<h2 id="klimagerechtigkeit">Klimagerechtigkeit</h2>
+		<div class="col s12 m6 l4">
+		{% capture title %}Fridays For Future{% endcapture %}
+		{% capture link %}
+		<a href="https://www.instagram.com/fridaysforfuture_wuerzburg/"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+		<a href="https://www.facebook.com/FridaysForFutureWuerzburg/"><i class="sl-red-text fab fa-facebook fa-2x"></i></a>
+		{% endcapture %}
+		{% capture description %}Friday For Future {% endcapture %}
+		{% capture image %} /img/groups/fff/image.jpg {% endcapture %}
+		{% capture logo %} /img/groups/fff/logo.png {% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
+		</div>
+		<div class="col s12 m6 l4">
+		{% capture title %}Ende Gelände{% endcapture %}
+		{% capture link %}null{% endcapture %}
 		{% capture description %}Friday For Future {% endcapture %}
 		{% capture image %} img/groups/antifa.jpg {% endcapture %}
 		{% capture active %}true{% endcapture %}
 		{% include group.html active=active title=title description=description link=link image=image %}
 		</div>
+		<div class="col s12 m6 l4">
+		{% capture title %}Kein Hektar Mehr{% endcapture %}
+		{% capture link %}
+		<a href="https://www.instagram.com/fridaysforfuture_wuerzburg/"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+		<a href="https://www.facebook.com/FridaysForFutureWuerzburg/"><i class="sl-red-text fab fa-facebook fa-2x"></i></a>
+		{% endcapture %}
+		{% capture description %}Friday For Future {% endcapture %}
+		{% capture image %} /img/groups/fff/image.jpg {% endcapture %}
+		{% capture logo %} /img/groups/fff/logo.png {% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
+		</div>
 	</div>
 
-	{% endcomment %}
+	<div class="row">
+		<h2 id="tier">Tierrechte / Tierbefreiung</h2>
+		<div class="col s12 m6 l4">
+		{% capture title %}WATU{% endcapture %}
+		{% capture link %}
+		<a href="https://watu.earth/"><i class="sl-red-text fas fa-globe fa-2x"></i></a>
+		<a href="https://www.instagram.com/watu.earth/"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+		<a href="https://twitter.com/WATU_Wuerzburg/"><i class="sl-red-text fab fa-twitter fa-2x"></i></a>
+		<a href="https://www.facebook.com/watu.earth/"><i class="sl-red-text fab fa-facebook fa-2x"></i></a>
+		{% endcapture %}
+		{% capture description %}WATU - Würzburg aktiv für Tierrechte und Umweltschutz {% endcapture %}
+		{% capture image %} /img/groups/watu/image.jpg {% endcapture %}
+		{% capture logo %} /img/groups/watu/logo.png {% endcapture %}
+		{% capture active %}true{% endcapture %}
+		{% include group.html active=active title=title description=description link=link image=image logo=logo %}
+		</div>
+
+	</div>
 
 	{% comment %}
 

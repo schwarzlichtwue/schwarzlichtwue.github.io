@@ -1,6 +1,13 @@
-<div class="card">
+<div class="card sticky-action">
 	<div class="card-image waves-effect waves-block waves-light">
-			<img class="activator" src="{{ image }}">
+		{% if image != 'null' %}
+		<img class="activator" src="{{ image }}">
+		{% endif %}
+		{% if include.logo != 'null' %}
+		<span class="activator card-title">
+			<img style="width:25%" src="{{ include.logo }}"/>
+		</span>
+		{% endif %}
 	</div>
 	<div class="card-content">
 		<span class="card-title activator grey-text text-darken-4">
@@ -12,8 +19,12 @@
 				{% endif %}
 			<i class="material-icons right">more_vert</i>
 		</span>
-		<p>{{ include.link }}</p>
 	</div>
+	{% if include.link != 'null' %}
+	<div class="card-action">
+			{{ include.link }}
+	</div>
+	{% endif %}
 	<div class="card-reveal">
 		<span class="card-title grey-text text-darken-4">
 			{{ include.title }}
