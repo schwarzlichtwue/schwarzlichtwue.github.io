@@ -4,7 +4,17 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+footer {
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff !important;
+}
+
 nav {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.footer-link {
+	color: #ffffff !important;
 	font-family: 'Open Sans', sans-serif;
 }
 
