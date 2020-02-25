@@ -8,6 +8,29 @@ nav {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.sidenav-link {
+	color: #7a001f !important;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
+.dropdown-link {
+	color: #7a001f !important;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
+
+.breadcrumb::before {
+	color: #7a001f !important;
+	font-size: 1rem;
+}
+
+.breadcrumb {
+	color: #7a001f !important;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
 .logo-link {
 	color: #7a001f;
 	font-family: 'Open Sans', sans-serif;
