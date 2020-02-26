@@ -4,7 +4,17 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+footer {
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff !important;
+}
+
 nav {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.footer-link {
+	color: #ffffff !important;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -32,18 +42,11 @@ nav {
 }
 
 .logo-link {
-	color: #7a001f;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1rem;
 }
 
-.logo-link {
-	color: #7a001f;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1rem;
-}
 .logo {
-	color: #7a001f;
 	font-family: 'Open Sans', sans-serif;
 	position: absolute;
 	display: inline-block;
