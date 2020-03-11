@@ -1,7 +1,13 @@
+main {
+     flex: 1 0 auto;
+}
 body {
     background: #fff;
     color: #333;
     font-family: 'Merriweather', serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 footer {
@@ -44,6 +50,14 @@ nav {
 .logo-link {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1rem;
+}
+
+.logo:hover {
+    color: #ffffff !important;
+}
+
+.logo:visited {
+    color: #ffffff !important;
 }
 
 .logo {
