@@ -4,18 +4,43 @@ layout: default
 
 <div class="container">
 	<div class="row">
-		<h1>Threads</h1>
+		<h1>Posts</h1>
 		<p>
-			Auflistung all unserer Threads.
+			Auflistung all unserer Threads und anderer Beiträge.
 		</p>
 	</div>
 	<div class="row">
-		{% for post in site.posts %}
-		<div class="col s6 m4 l2">
-			<div class="center card-panel white truncate">
-					<a href="/p/{{post.title}}.html">{{post.title}}</a>
-			</div>
+		<ul class="collapsible expandable">
+		<li class="active">
+		<div class="collapsible-header">
+			Threads
 		</div>
+				<div class="collapsible-body">
+					<ul class="collection">
+		{% assign posts = site.posts | where: "categories", "twitter" %}
+		{% for post in posts %}
+						<li class="collection-item">
+								<a href="{{post.url}}.html">{{post.title}}</a>
+						</li>
 		{% endfor %}
+					</ul>
+				</div>
+		</li>
+		<li class="active">
+		<div class="collapsible-header">
+			Linksunten
+		</div>
+				<div class="collapsible-body">
+					<ul class="collection">
+		{% assign posts = site.posts | where: "categories", "linksunten" %}
+		{% for post in posts %}
+						<li class="collection-item">
+								<a href="{{post.url}}.html">{{post.title}}</a>
+						</li>
+		{% endfor %}
+					</ul>
+				</div>
+		</li>
+		</ul>
 	</div>
 </div>

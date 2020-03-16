@@ -26,10 +26,18 @@ github_username:  schwarzlichtwue
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-paginate
+       #  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-archives
 
-paginate: 16
+    #paginate: 16
+
+pagination:
+        enabled: true
+        per_page: 16 # used to be 'paginate'
+        sort_reverse: true
+        title: ':title | :num/:max'
+        permalink: '/pages/:num/'
 
 permalink: /p/:title
 
