@@ -2,7 +2,7 @@
 layout: sub
 ---
 <div id="content" class="container posts">
-	<h1>Tweets des Jahres {{ page.date | date: "%Y" }}</h1>
+	<h1>Beiträge des Jahres {{ page.date | date: "%Y" }}</h1>
 	{% for post in page.posts %}
 	{% include post.html %}
 	{% endfor %}

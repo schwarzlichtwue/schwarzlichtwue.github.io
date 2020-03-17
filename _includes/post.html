@@ -12,7 +12,9 @@
 	</div>
 	<div class="right">
 		<a style="margin:5px" href="{{post.url}}.html"><i class="fas fa-share-alt-square"></i></a>
+		{% if post.categories contains "twitter" %}
 		<a href="{{ post.ref }}"><i class="fab fa-twitter"></i></a>
+		{% endif %}
 	</div>
 </article>
 <div class="divider">

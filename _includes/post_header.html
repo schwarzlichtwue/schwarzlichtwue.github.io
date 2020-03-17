@@ -1,5 +1,13 @@
 <header class="post-header">
 	<div class="post-meta">
+			{% if post.categories contains "twitter"  %}
+			{% else %}
+				<h2>
+					<a href="{{post.url}}.html">
+					{{ post.title }}
+					</a>
+				</h2>
+			{% endif %}
 		<span class="post-date">{{ post.date | date: "%d.%m.%Y, %H:%M" }}</span>
 		<br>
 		<span class="post-category">

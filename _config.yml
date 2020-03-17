@@ -39,7 +39,7 @@ pagination:
         title: ':title | :num/:max'
         permalink: '/pages/:num/'
 
-permalink: /p/:title
+permalink: /p/:year-:month-:day-:title
 
 jekyll-archives:
   enabled: [tags, year, month]

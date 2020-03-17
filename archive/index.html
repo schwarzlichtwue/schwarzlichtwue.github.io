@@ -5,7 +5,7 @@ layout: sub
 <!-- https://zpbappi.com/jekyll-with-tags-archive-and-comments-in-github-pages/ -->
 {% assign cYear = "" %}
 {% assign cMonth = "" %}
-{% assign posts = site.posts | sort: 'date' | reverse %}
+{% assign posts = site.posts | where: "categories", "twitter"  | sort: 'date' | reverse %}
 {% assign first = posts | first %}
 {% assign cMonthName = "" %}
 {% assign cMonthLink = "" %}

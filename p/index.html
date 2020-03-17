@@ -20,7 +20,7 @@ layout: default
 		{% assign posts = site.posts | where: "categories", "twitter" %}
 		{% for post in posts %}
 						<li class="collection-item">
-								<a href="{{post.url}}.html">{{post.title}}</a>
+								<a href="{{post.url}}.html">{{post.date | date: "%-d %B %Y" }}: {{post.title}}</a>
 						</li>
 		{% endfor %}
 					</ul>
@@ -35,7 +35,7 @@ layout: default
 		{% assign posts = site.posts | where: "categories", "linksunten" %}
 		{% for post in posts %}
 						<li class="collection-item">
-								<a href="{{post.url}}.html">{{post.title}}</a>
+								<a href="{{post.url}}.html">{{post.date | date: "%-d %B %Y" }}: {{post.title}}</a>
 						</li>
 		{% endfor %}
 					</ul>
