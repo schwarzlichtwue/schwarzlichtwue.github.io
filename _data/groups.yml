@@ -1,0 +1,13 @@
+- id: antira
+  name: "AntiRa / AntiFa"
+  groups:
+          - name: Antifa
+            active: "true"
+            description: "Gruppe von Antifaschist*innen."
+            logo: "/img/groups/antifa/logo.png"
+            image: "/img/groups/antifa/image.jpg"
+            facebook: "null"
+            instagram: "https://instagram.com/antifa_wue"
+            twitter: "https://twitter.com/antifa_wue"
+            mail: "mailto:antifa-wuerzburg@riseup.net"
+            website: "https://antifawuerzburg.blackblogs.org"
