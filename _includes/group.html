@@ -62,7 +62,13 @@
 			<i class="material-icons right">close</i>
 		</span>
 		<p>
+			{% if group.description %}
 			{{ group.description }}
+			{% else %}
+			<b>Beschreibung fehlt!</b> Bitte
+			<a href="{% include group_submit_mail.html %}">wende dich an uns</a>,
+			wenn du die Beschreibung für diese Gruppe einreichen willst.
+			{% endif %}
 		</p>
 	</div>
 </div>
