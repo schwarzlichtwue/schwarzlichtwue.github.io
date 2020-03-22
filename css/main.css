@@ -1,7 +1,13 @@
+main {
+     flex: 1 0 auto;
+}
 body {
     background: #fff;
     color: #333;
     font-family: 'Merriweather', serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 footer {
@@ -46,6 +52,14 @@ nav {
 	font-size: 1rem;
 }
 
+.logo:hover {
+    color: #ffffff !important;
+}
+
+.logo:visited {
+    color: #ffffff !important;
+}
+
 .logo {
 	font-family: 'Open Sans', sans-serif;
 	position: absolute;
@@ -70,14 +84,35 @@ nav {
 }
 
 h1 {
-	font-size: xx-large;
+	font-size: 3.1em;
 	font-weight: bold;
 	font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
-	font-size: large;
-	font-weight: bolder;
+	font-size: 2.49em;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+	font-size: 2.04em;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+h4 {
+	font-size: 1.60em;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+h5 {
+	font-size: 1.15em;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+h6 {
+	font-size: 0.80em;
+	font-weight: bold;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -102,6 +137,10 @@ p {
 		font-family: 'Open Sans', sans-serif;
 }
 
+main a {
+	text-decoration: underline;
+}
+
 a {
 	color: #7a001f;
 	text-decoration: none;
@@ -122,6 +161,7 @@ h1 a {
 .tag {
 	font-size: larger;
 	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
 }
 
 

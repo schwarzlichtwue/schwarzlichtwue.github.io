@@ -1,0 +1,70 @@
+{% assign cYear = "" %}
+{% assign cMonth = "" %}
+{% assign posts = site.posts | where: "categories", "linksunten"  | sort: 'date' | reverse %}
+{% assign first = posts | first %}
+{% assign cMonthName = "" %}
+{% assign cMonthLink = "" %}
+{% assign cYearLink  = "" %}
+{% assign count = 0 %}
+
+<ul class="collapsible expandable">
+	<li class="">
+	{% for post in posts %}
+	  {% assign count = count | plus: 1 %}
+	  {% assign year = post.date | date: '%Y' %}
+	  {% assign month = post.date | date: '%Y-%m' %}
+	  {% if year != cYear %}
+	    {% if cYear != "" %}
+					<a href="{{cMonthLink | prepend: "/archive" | prepend: site.baseurl}}">{{cMonthName}}</a>
+					({{count | minus: 1}})
+				</li>
+			</ul>
+		</div>
+	</li>
+	<li class="">
+	      {% assign count = 1 %}
+	    {% endif %}
+	    {% assign cYearLink = post.date | date: '/%Y' %}
+		<div class="collapsible-header">
+						 {{year}}
+		</div>
+		<div class="collapsible-body">
+			<ul class="collection">
+				<li class="collection-item">
+	    {% assign cMonth = "" %}
+	    {% assign cYear = year %}
+	  {% endif %}
+
+	  {% if month != cMonth %}
+	    {% if cMonth != "" %}
+				<a href="{{cMonthLink | prepend: "/archive" | prepend: site.baseurl}}">{{cMonthName}}</a>
+				({{count | minus: 1}})
+			</li>
+			<li class="collection-item">
+	      {% assign count = 1 %}
+	    {% endif %}
+	    {% assign cMonth = month %}
+	  {% endif %}
+	  {% assign cMonthName = post.date | date: '%B' %}
+	  {% assign cMonthLink = post.date | date: '/%Y-%m' %}
+	{% endfor %}
+				<a href="{{cMonthLink | prepend: "/archive" | prepend: site.baseurl}}">{{cMonthName}}</a> ({{count}})
+			</li>
+		</ul>
+	</li>
+	<li class="">
+		<div class="collapsible-header">
+				<span>Alle Beiträge</span>
+		</div>
+		<div class="collapsible-body">
+			<ul class="collection">
+		{% assign posts = site.posts | where: "categories", "linksunten" %}
+		{% for post in posts %}
+				<li class="collection-item">
+					<a href="{{post.url}}.html">{{post.date | date: "%-d %B %Y" }}: {{post.title}}</a>
+				</li>
+		{% endfor %}
+			</ul>
+		</div>
+	</li>
+</ul>
