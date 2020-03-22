@@ -4,7 +4,6 @@
           - id: antifa
             name: Antifa
             active: "true"
-            description: ""
             logo: "/img/groups/antifa/logo.png"
             image: "/img/groups/antifa/image.jpg"
             contact:
@@ -15,21 +14,18 @@
           - id: florakreis
             name: Florakreis
             active: "true"
-            description: ""
             logo: "/img/groups/florakreis/logo.png"
             contact:
                 website: "http://florakreis.blogsport.de/"
           - id: akr
             name: AK Rassismus
             active: "false"
-            description: ""
 - id: feminism
   name: "Queer*Feminismus"
   groups:
           - id: missmutig
             name: MissMutig
             active: "true"
-            description: ""
             logo: "/img/groups/missmutig/logo.png"
             image: "/img/groups/missmutig/image.jpg"
             contact:
@@ -39,14 +35,12 @@
           - id: femstammtisch
             name: Feministischer Stammtisch
             active: "true"
-            description: ""
             contact:
                 instagram: "https://instagram.com/femwue"
                 facebook: "https://www.facebook.com/Fem.Stammtisch/"
           - id: queerpride
             name: Queer Pride e.V.
             active: "true"
-            description: ""
             logo: "/img/groups/queerpride/logo.png"
             image: "/img/groups/queerpride/image.jpg"
             contact:
@@ -93,12 +87,10 @@
           - id: rojavabuendnis
             name: Rojava Bündnis
             active: "true"
-            description: ""
             image: "/img/groups/rojavabuendnis/image.jpg"
           - id: rotehilfe
             name: Rote Hilfe e.V.
             active: "true"
-            description: ""
             logo: "/img/groups/rotehilfe/logo.png"
             contact:
                 mail: "mailto:wuerzburg@rote-hilfe.de"
@@ -111,13 +103,21 @@
             contact:
                 facebook: "https://www.facebook.com/MediNetz-W%C3%BCrzburg-eV-813531468793464/"
                 website: "https://www.medinetz-wuerzburg.de/"
+          - id: ewo
+            name: Eat Well Organisation e.V.
+            active: "true"
+            description: "Die eat well organisation (ewo) e.V. verzaubert gerettete Lebensmittel zu veganen Gerichten und setzt die Spenden für eine mobile Ausstattung ein, die tierleidfreie, nachhaltige und leckere Küche für Bedürftige auch an abgelegene Orte bringen kann."
+            logo: "/img/groups/ewo/logo.png"
+            contact:
+                facebook: "https://www.facebook.com/eatwellorganisation/"
+                website: "https://eatwellorganisation.wordpress.com/"
+                mail: "eatwellorganisation@gmail.com"
 - id: klimagerechtigkeit
   name: "Klimagerechtigkeit"
   groups:
           - id: fff
             name: Fridays For Future
             active: "true"
-            description: ""
             logo: "/img/groups/fff/logo.png"
             image: "/img/groups/fff/image.jpg"
             contact:
@@ -131,7 +131,6 @@
           - id: pff
             name: Parents For Future
             active: "true"
-            description: ""
             contact:
                 mail: "mailto:wuerzburg@parentsforfuture.de"
                 telegram: "https://t.me/s/p4fwue"
@@ -140,11 +139,9 @@
           - id: physiciansff
             name: Physicians For Future
             active: "true"
-            description: ""
           - id: eg
             name: Ende Gelände
             active: "true"
-            description: ""
             logo: "/img/groups/eg/logo.png"
             image: "/img/groups/eg/image.jpg"
             contact:
@@ -183,8 +180,15 @@
           - id: sozkuz
             name: Initiative Soziokulturelles Zentrum
             active: "true"
-            description: ""
             image: "/img/groups/sozkuz/image.jpg"
             contact:
                 mail: "mailto:soziokulturelles-zentrum@riseup.net"
                 website: "https://sozkuzwue.wordpress.com/"
+          - id: akj
+            name: Arbeitskreis Kritische Jurist*innen
+            active: "true"
+            description: "Der AKJ-Würzburg ist ein Zusammenschluss von Jurastudierenden, Referendar*innen und Mitarbeitenden der Universität sowie von anderen Interessierten, die ihr Wissen in einen gesellschaftlichen Rahmen stellen und ihre juristischen Fähigkeiten nutzen wollen, um mit diesen linkspolitisch zu arbeiten."
+            contact:
+                mail: "mailto:akj-wue@riseup.net"
+                instagram: "https://www.instagram.com/akj.wue/"
+                facebook: "https://www.facebook.com/akj.wue"
