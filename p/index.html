@@ -28,6 +28,21 @@ layout: default
 		</li>
 		<li class="active">
 		<div class="collapsible-header">
+			Dokumente
+		</div>
+				<div class="collapsible-body">
+					<ul class="collection">
+		{% assign posts = site.posts | where: "categories", "document" %}
+		{% for post in posts %}
+						<li class="collection-item">
+								<a href="{{post.url}}.html">{{post.date | date: "%-d %B %Y" }}: {{post.title}}</a>
+						</li>
+		{% endfor %}
+					</ul>
+				</div>
+		</li>
+		<li class="active">
+		<div class="collapsible-header">
 			Linksunten
 		</div>
 				<div class="collapsible-body">
