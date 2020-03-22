@@ -76,6 +76,7 @@ nav {
 }
 .collection-item a {
 	font-family: 'Open Sans', sans-serif;
+	text-decoration: none !important;
 }
 
 .card-title {
@@ -155,7 +156,15 @@ a:visited {
 }
 
 h1 a {
-		color: #000;
+	text-decoration: none !important;
+}
+
+h2 a {
+	text-decoration: none !important;
+}
+
+h3 a {
+	text-decoration: none !important;
 }
 
 .tag {
