@@ -103,6 +103,14 @@
             contact:
                 mail: "mailto:wuerzburg@rote-hilfe.de"
                 website: "http://rotehilfewuerzburg.blogsport.de/"
+          - id: medinetz
+            name: MediNetz Würzburg e.V.
+            active: "true"
+            description: "MediNetz ist eine Menschenrechts-Initiative und NGO. Sie hat das Ziel, die Situation von Flüchtlingen und Migrant*innen zu verbessern. Durch die Gesetze der Bundesrepublik Deutschland werden diese und auch unversicherte Menschen von medizinischer Versorgung ausgeschlossen."
+            logo: "/img/groups/medinetz/logo.png"
+            contact:
+                facebook: "https://www.facebook.com/MediNetz-W%C3%BCrzburg-eV-813531468793464/"
+                website: "https://www.medinetz-wuerzburg.de/"
 - id: klimagerechtigkeit
   name: "Klimagerechtigkeit"
   groups:
