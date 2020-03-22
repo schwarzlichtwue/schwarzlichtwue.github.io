@@ -51,7 +51,7 @@ jekyll-archives:
   layouts:
     #category: category-archive
     tag: tag-archive
-    year: year-archive
+    #year: year-archive
     month: month-archive
     #day: day-archive
 

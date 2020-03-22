@@ -4,11 +4,25 @@
 		{{ post.content }}
 	</div>
 	<div class="section">
-	<div class="row">
-		{% for post_media in post.media %}
-		{% include media.html %}
-		{% endfor %}
-	</div>
+		<div class="row">
+			{% for post_media in post.media %}
+			{% include media.html %}
+			{% endfor %}
+		</div>
+		{% if post.docs.size > 0 %}
+		<div class="row">
+			<h3>Dokumente</h3>
+			<ul class="collection">
+			{% for post_doc in post.docs %}
+			<li class="collection-item">
+			<a href="{{ post_doc.url }}">
+			{{ post_doc.desc }}
+			</a>
+			</li>
+			{% endfor %}
+			</div>
+		</div>
+		{% endif %}
 	</div>
 	<div class="right">
 		<a style="margin:5px" href="{{post.url}}.html"><i class="fas fa-share-alt-square"></i></a>

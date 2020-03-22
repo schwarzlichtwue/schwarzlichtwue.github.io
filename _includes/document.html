@@ -1,0 +1,42 @@
+<article class="post">
+<header class="post-header">
+	<div class="post-meta">
+				<h2>
+					Dokument: {{ doc.title }}
+				</h2>
+		<span class="post-date">{{ doc.date | date: "%d.%m.%Y, %H:%M" }}</span>
+		<br>
+		<span class="post-category">
+			{% for tag in doc.tags %}
+			{% include tag.html %}
+			{% endfor %}
+		</span>
+	</div>
+</header>
+	<div class="section">
+		<div class="row post-content">
+			{{ doc.content }}
+		</div>
+		{% if doc.media.size > 0 %}
+		<div class="row">
+			{% for post_media in doc.media %}
+			{% include media.html %}
+			{% endfor %}
+		</div>
+		{% endif %}
+		{% if doc.docs.size > 0 %}
+		<div class="row">
+			<ul class="collection">
+			{% for doc_ref in doc.docs %}
+			<li class="collection-item">
+			<a href="{{ doc_ref.url }}">
+			{{ doc_ref.desc }}
+			</a>
+			</li>
+			{% endfor %}
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</article>
+</div>
