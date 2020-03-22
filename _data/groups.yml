@@ -1,13 +1,182 @@
 - id: antira
   name: "AntiRa / AntiFa"
   groups:
-          - name: Antifa
+          - id: antifa
+            name: Antifa
             active: "true"
-            description: "Gruppe von Antifaschist*innen."
+            description: ""
             logo: "/img/groups/antifa/logo.png"
             image: "/img/groups/antifa/image.jpg"
-            facebook: "null"
-            instagram: "https://instagram.com/antifa_wue"
-            twitter: "https://twitter.com/antifa_wue"
-            mail: "mailto:antifa-wuerzburg@riseup.net"
-            website: "https://antifawuerzburg.blackblogs.org"
+            contact:
+                instagram: "https://instagram.com/antifa_wue"
+                twitter: "https://twitter.com/antifa_wue"
+                mail: "mailto:antifa-wuerzburg@riseup.net"
+                website: "https://antifawuerzburg.blackblogs.org"
+          - id: florakreis
+            name: Florakreis
+            active: "true"
+            description: ""
+            logo: "/img/groups/florakreis/logo.png"
+            contact:
+                website: "http://florakreis.blogsport.de/"
+          - id: akr
+            name: AK Rassismus
+            active: "false"
+            description: ""
+- id: feminism
+  name: "Queer*Feminismus"
+  groups:
+          - id: missmutig
+            name: MissMutig
+            active: "true"
+            description: ""
+            logo: "/img/groups/missmutig/logo.png"
+            image: "/img/groups/missmutig/image.jpg"
+            contact:
+                instagram: "https://instagram.com/missmutigwue"
+                mail: "mailto:miss-mutig@riseup.net"
+                facebook: "https://www.facebook.com/MissMutig-448597675643037/"
+          - id: femstammtisch
+            name: Feministischer Stammtisch
+            active: "true"
+            description: ""
+            contact:
+                instagram: "https://instagram.com/femwue"
+                facebook: "https://www.facebook.com/Fem.Stammtisch/"
+          - id: queerpride
+            name: Queer Pride e.V.
+            active: "true"
+            description: ""
+            logo: "/img/groups/queerpride/logo.png"
+            image: "/img/groups/queerpride/image.jpg"
+            contact:
+                instagram: "https://instagram.com/queerpridewue"
+                facebook: "https://www.facebook.com/Queer-Pride-W%C3%BCrzburg-1983927801934950/"
+                twitter: "https://twitter.com/QueerPrideWue"
+                website: "https://www.queerpridewue.de/"
+                mail: "mailto:kontakt@queerpridewue.de"
+- id: solidarity
+  name: "Solidarity"
+  groups:
+          - id: mehrals16a
+            name: Mehr als 16a
+            active: "true"
+            description: "Die Asylpolitische Aktionsgruppe der <a type=\"_blank\" href=\"http://www.khg-wuerzburg.de/seiten/index.html\">KHG</a>."
+            logo: "/img/groups/mehrals16a/logo.png"
+            image: "/img/groups/mehrals16a/image.jpg"
+            contact:
+                twitter: "https://twitter.com/mehrals16a"
+                instagram: "https://instagram.com/mehrals16a"
+                mail: "mailto:mehrals16a@gmail.com"
+                facebook: "https://www.facebook.com/mehrals16a/"
+                website: "http://mehrals16a.blogsport.de/"
+          - id: seebruecke
+            name: Seebrücke
+            active: "true"
+            description: "Eine bundesweite Bewegung gegen die Kriminalisiserung der Seenotrettung und für sichere Fluchtwege."
+            logo: "/img/groups/seebruecke/logo.png"
+            image: "/img/groups/seebruecke/image.jpg"
+            contact:
+                twitter: "https://twitter.com/SeebrueckeWue"
+                instagram: "https://www.instagram.com/seebrueckewue/"
+                telegram: "https://t.me/Seebwue/"
+                mail: "mailto:wuerzburg@seebruecke.org"
+                facebook: "https://www.facebook.com/SeebrueckeWue/"
+          - id: initiativebleiberecht
+            name: Initiative Bleiberecht
+            active: "true"
+            description: "Offenes Bündnis aus Würzburg für die Anerkennung des Rechts auf Bewegungsfreiheit für alle. Für eine Zukunft für alle, statt für wenige."
+            logo: "/img/groups/initiativebleiberecht/logo.png"
+            contact:
+                mail: "mailto:bleiberecht.initiative@gmail.com"
+                facebook: "https://de-de.facebook.com/Initiative-Bleiberecht-W%C3%BCrzburg-346798769059057/posts/"
+          - id: rojavabuendnis
+            name: Rojava Bündnis
+            active: "true"
+            description: ""
+            image: "/img/groups/rojavabuendnis/image.jpg"
+          - id: rotehilfe
+            name: Rote Hilfe e.V.
+            active: "true"
+            description: ""
+            logo: "/img/groups/rotehilfe/logo.png"
+            contact:
+                mail: "mailto:wuerzburg@rote-hilfe.de"
+                website: "http://rotehilfewuerzburg.blogsport.de/"
+- id: klimagerechtigkeit
+  name: "Klimagerechtigkeit"
+  groups:
+          - id: fff
+            name: Fridays For Future
+            active: "true"
+            description: ""
+            logo: "/img/groups/fff/logo.png"
+            image: "/img/groups/fff/image.jpg"
+            contact:
+                instagram: "https://www.instagram.com/fridaysforfuture_wuerzburg/"
+                twitter: "https://twitter.com/F4F_wuerzburg"
+                facebook: "https://www.facebook.com/FridaysForFutureWuerzburg/"
+                telegram: "https://t.me/fffwue"
+                whatsapp: "https://chat.whatsapp.com/E60w7mpfREh97fRlVhHwye"
+                mail: "mailto:wuerzburg@fridaysforfuture.de"
+                website: "https://wechange.de/project/fridays-for-future-wuerzburg/"
+          - id: pff
+            name: Parents For Future
+            active: "true"
+            description: ""
+            contact:
+                mail: "mailto:wuerzburg@parentsforfuture.de"
+                telegram: "https://t.me/s/p4fwue"
+                whatsapp: "https://chat.whatsapp.com/BpCzq0CycO68IrVAw94WVk"
+                website: "https://parentsforfuture.de/de/wuerzburg"
+          - id: physiciansff
+            name: Physicians For Future
+            active: "true"
+            description: ""
+          - id: eg
+            name: Ende Gelände
+            active: "true"
+            description: ""
+            logo: "/img/groups/eg/logo.png"
+            image: "/img/groups/eg/image.jpg"
+            contact:
+                instagram: "https://www.instagram.com/eg_wue/"
+                twitter: "https://twitter.com/EGwuerzburg"
+                facebook: "https://www.facebook.com/EndeGelaendeWue"
+                mail: "mailto:wuerzburg@ende-gelaende.org"
+          - id: keinhamehr
+            name: Kein Hektar Mehr
+            active: "true"
+            description: "Keinhamehr (Kein Hektar mehr!) versteht sich als regionales Bündnis, das sich für den Erhalt des durch Rodung bedrohten Thüngersheimer Waldes einsetzt."
+            logo: "/img/groups/keinhamehr/logo.png"
+            image: "/img/groups/keinhamehr/image.jpg"
+            contact:
+                twitter: "https://twitter.com/keinhektarmehr"
+                facebook: "https://www.facebook.com/keinhamehr/"
+                mail: "mailto:keinhamehr@mailbox.org"
+- id: tierrechte
+  name: "Tierrechte / Tierbefreiung"
+  groups:
+          - id: watu
+            name: WATU
+            active: "true"
+            description: "Mit unseren Aktionen möchten wir Menschen auf friedliche Art und Weise zum Nachdenken anregen und auf Augenhöhe Informationen über die Hintergründe der kommerziellen Tierhaltung sowie deren Auswirkungen auf die sogenannten Nutztiere, auf die Gesundheit von uns Menschen und die Umwelt bereitstellen."
+            logo: "/img/groups/watu/logo.png"
+            image: "/img/groups/watu/image.jpg"
+            contact:
+                instagram: "https://www.instagram.com/watu.earth/"
+                twitter: "https://twitter.com/WATU_wuerzburg"
+                facebook: "https://www.facebook.com/watu.earth/"
+                mail: "mailto:kontakt@watu.earth"
+                website: "https://watu.earth"
+- id: andere
+  name: "Andere"
+  groups:
+          - id: sozkuz
+            name: Initiative Soziokulturelles Zentrum
+            active: "true"
+            description: ""
+            image: "/img/groups/sozkuz/image.jpg"
+            contact:
+                mail: "mailto:soziokulturelles-zentrum@riseup.net"
+                website: "https://sozkuzwue.wordpress.com/"

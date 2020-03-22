@@ -1,9 +1,11 @@
-<div class="card sticky-action">
+<div id="{{group.id}}" class="card sticky-action">
 	<div class="card-image waves-effect waves-block waves-light">
-		{% if group.image != 'null' %}
+		{% if group.image %}
 		<img class="activator" src="{{ group.image }}">
+		{% else %}
+		<img class="activator" src="/img/groups/null.svg">
 		{% endif %}
-		{% if group.logo != 'null' %}
+		{% if group.logo %}
 		<span class="activator card-title">
 			<img style="width:25%" src="{{ group.logo }}"/>
 		</span>
@@ -12,33 +14,48 @@
 	<div class="card-content">
 		<span class="card-title activator grey-text text-darken-4">
 				{{ group.name }}
-				{% if group.active != "true" %}
-					<span style="font-size:smaller; font-weight:bolder;" class="sl-red-text">
+		{% if group.active != "true" %}
+					<span style="font-size:smaller; font-weight:bolder;"
+							class="activator sl-red-text">
 					INAKTIV
 					</span>
 				{% endif %}
 			<i class="material-icons right">more_vert</i>
 		</span>
 	</div>
+	{% if group.contact %}
 	<div class="card-action">
-	{% if group.mail != 'null' %}
-	<a href="{{ group.mail }}"><i class="sl-red-text fas fa-envelope fa-2x"></i></a>
+	{% if group.contact.mail %}
+	<a target="_blank" href="{{ group.contact.mail }}"><i class="sl-red-text fas fa-envelope fa-2x"></i></a>
 	{% endif %}
-	{% if group.website != 'null' %}
-	<a href="{{ group.website }}"><i class="sl-red-text fas fa-globe fa-2x"></i></a>
+	{% if group.contact.website %}
+	<a target="_blank" href="{{ group.contact.website }}"><i class="sl-red-text fas fa-globe fa-2x"></i></a>
 	{% endif %}
-	{% if group.twitter != 'null' %}
-	<a href="{{ group.twitter }}"><i class="sl-red-text fab fa-twitter fa-2x"></i></a>
+	{% if group.contact.twitter %}
+	<a target="_blank" href="{{ group.contact.twitter }}"><i class="sl-red-text fab fa-twitter fa-2x"></i></a>
 	{% endif %}
-	{% if group.instagram != 'null' %}
-	<a href="{{ group.instagram }}"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+	{% if group.contact.instagram %}
+	<a target="_blank" href="{{ group.contact.instagram }}"><i class="sl-red-text fab fa-instagram fa-2x"></i></a>
+	{% endif %}
+	{% if group.contact.facebook %}
+	<a target="_blank" href="{{ group.contact.facebook }}"><i class="sl-red-text fab fa-facebook fa-2x"></i></a>
+	{% endif %}
+	{% if group.contact.telegram %}
+	<a target="_blank" href="{{ group.contact.telegram }}"><i
+					class="sl-red-text fab fa-telegram fa-2x"></i></a>
+	{% endif %}
+	{% if group.contact.whatsapp %}
+	<a target="_blank" href="{{ group.contact.whatsapp }}"><i
+					class="sl-red-text fab fa-whatsapp fa-2x"></i></a>
 	{% endif %}
 	</div>
+	{% endif %}
 	<div class="card-reveal">
 		<span class="card-title grey-text text-darken-4">
 			{{ group.name }}
 			{% if group.active != "true" %}
-				<span style="font-size:smaller; font-weight:bolder;" class="sl-red-text">
+				<span style="font-size:smaller; font-weight:bolder;"
+						class="card-title sl-red-text">
 				INAKTIV
 				</span>
 			{% endif %}
