@@ -10,53 +10,85 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<script defer="" src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 </head><body><header class="site-header">
-	<div class="container hide-on-med-and-up">
-		<div class="row center">
-			<div class "col s12">
-				<a href="/">
-					<img style="margin-top: 1em; width:25%;"
-					class="responsive-img" src="/img/title.svg">
+	<div class="navbar-fixed">
+<nav class="sl-red">
+	<div class="nav-wrapper">
+		<a href="/" class="logo left">
+				<img class="hide-on-med-and-down" style="height: 2.1rem;"
+					src="/img/logo-white.svg">
+				<span>
+					SCHWARZLICHT
+				</span>
+		</a>
+		<a href="#" data-target="sidenav" class="sidenav-trigger logo-link"><i class="material-icons">menu</i></a>
+		<ul class="right hide-on-med-and-down">
+			<li>
+				<a style="margin-right: 1em;" class="logo-link dropdown-trigger" href="#!"
+					data-target="dropdown">
+					Menu
+					<i class="material-icons right">arrow_drop_down</i>
 				</a>
-			</div>
-		</div>
-		<div class="row center">
-			<h1 class="page-title"><a href="/">Schwarzlicht Würzburg</a></h1>
-			<h2 class="page-subtitle">
-				Newsticker für Veranstaltungen und
-				Mobilisierungen im Raum Würzburg
-			</h2>
-			<p>
-				<a target="_blank" href="https://twitter.com/schwarzlichtwue">
-		<i class="fab fa-twitter fa-2x"></i>
-</a>
-<a target="_blank" href="https://facebook.com/schwarzlicht.wue">
-		<i class="fab fa-facebook fa-2x"></i>
-</a>
-<a target="_blank" href="https://www.instagram.com/schwarzlicht.wue/">
-		<i class="fab fa-instagram fa-2x"></i>
-</a>
-<a target="_blank" href="https://github.com/schwarzlichtwue">
-		<i class="fab fa-github fa-2x"></i>
-</a>
-
-			</p>
-		</div>
+			</li>
+		</ul>
 	</div>
-	<div class="container hide-on-small-only">
+</nav>
+</div>
+
+<ul class="sidenav" id="sidenav">
+		<li>
+		<a class="sidenav-link" href="/#timeline">Timeline</a>
+	</li>
+	<li>
+		<a class="sidenav-link" href="/t/">Themen</a>
+	</li>
+	<li>
+		<a class="sidenav-link" href="/archive/">Archiv</a>
+	</li>
+	<li class="divider"></li>
+	<li><a class="subheader"
+				style="font-weight: thinner; font-family: 'Open Sans', sans-serif;">
+				Sonstiges</a></li>
+	<li>
+		<a class="sidenav-link" href="/other/groups/">Gruppen</a>
+	</li>
+	<li>
+		<a class="sidenav-link" href="/other/documents/">Dokumente</a>
+	</li>
+
+</ul>
+
+<ul class="dropdown-content" id="dropdown">
+		<li>
+		<a class="dropdown-link" href="/#timeline">Timeline</a>
+	</li>
+	<li>
+		<a class="dropdown-link" href="/t/">Themen</a>
+	</li>
+	<li>
+		<a class="dropdown-link" href="/archive/">Archiv</a>
+	</li>
+	<li class="divider"></li>
+	<li>
+		<a class="dropdown-link" href="/other/groups/">Gruppen</a>
+	</li>
+	<li>
+		<a class="dropdown-link" href="/other/documents/">Dokumente</a>
+	</li>
+
+</ul>
+
+	<div class="container">
+		<div class="center col s12 hide-on-med-and-up">
+			<a href="/">
+				<img style="margin-top:1em; vertical-align: middle; width:75%" class="responsive-img" src="/img/title.svg">
+			</a>
+		</div>
 		<div class="row valign-wrapper">
-			<div class="col m4 center">
+			<div class="center col s12 m4 hide-on-small-only">
 				<a href="/">
-					<img style="margin-top: 1em; width: 75%;"
-					class="responsive-img" src="/img/title.svg">
+					<img style="margin-top:2em; vertical-align: middle;" class="responsive-img" src="/img/title.svg">
 				</a>
-			</div>
-			<div class="col m8">
-				<h1 class="page-title"><a href="/">Schwarzlicht Würzburg</a></h1>
-				<h2 class="page-subtitle">
-					Newsticker für Veranstaltungen und
-					Mobilisierungen im Raum Würzburg
-				</h2>
-				<p>
+				<p class="right">
 					<a target="_blank" href="https://twitter.com/schwarzlichtwue">
 		<i class="fab fa-twitter fa-2x"></i>
 </a>
@@ -72,6 +104,44 @@
 
 				</p>
 			</div>
+			<div class="col s12 offset-m1 m7">
+				<h1 class="page-subtitle">NEWSTICKER FÜR VERANSTALTUNGEN & MOBILISIERUNGEN IM RAUM WÜRZBURG</h1>
+				<div class="row">
+					<div class="col s12">
+						<p>
+							Diese Website ist ein Mirror des Twitter-Feeds von
+							<a target="_blank"
+									href="https://twitter.com/schwarzlichtwue">@schwarzlichtwue</a>.
+						</p>
+						<p>
+							Der Source Code für
+							<a target="_blank"
+									href="https://github.com/schwarzlichtwue/schwarzlichtwue.github.io/tree/dev">Website</a>
+							und
+							<a target="_blank"
+									href="https://github.com/schwarzlichtwue/provider">Mirror</a>
+							kann auf GitHub eingesehen werden.
+						</p>
+					</div>
+					<div class="col s12">
+						<p class="left hide-on-med-and-up">
+					<a target="_blank" href="https://twitter.com/schwarzlichtwue">
+		<i class="fab fa-twitter fa-2x"></i>
+</a>
+<a target="_blank" href="https://facebook.com/schwarzlicht.wue">
+		<i class="fab fa-facebook fa-2x"></i>
+</a>
+<a target="_blank" href="https://www.instagram.com/schwarzlicht.wue/">
+		<i class="fab fa-instagram fa-2x"></i>
+</a>
+<a target="_blank" href="https://github.com/schwarzlichtwue">
+		<i class="fab fa-github fa-2x"></i>
+</a>
+
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>
@@ -85,6 +155,828 @@
 		</p>
 	</div>
 	<div class="row">
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1241491235258466310.html">1241491235258466310</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1241489440280805383.html">1241489440280805383</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1241488500228325376.html">1241488500228325376</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1241487962480803842.html">1241487962480803842</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1241487095920766978.html">1241487095920766978</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1241484638981423107.html">1241484638981423107</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1241355273987592194.html">1241355273987592194</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1241352677411500032.html">1241352677411500032</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240734290478018573.html">1240734290478018573</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240714461700214784.html">1240714461700214784</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240370443523104768.html">1240370443523104768</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240367494587650048.html">1240367494587650048</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240366459890667520.html">1240366459890667520</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240365497021014016.html">1240365497021014016</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240364631463428098.html">1240364631463428098</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240364400365703175.html">1240364400365703175</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240363978989109253.html">1240363978989109253</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240363782968348673.html">1240363782968348673</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240363536523632647.html">1240363536523632647</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240362587457536000.html">1240362587457536000</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240359798065020930.html">1240359798065020930</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240358841780494336.html">1240358841780494336</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240357582172237824.html">1240357582172237824</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240356393661517824.html">1240356393661517824</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240355631254700040.html">1240355631254700040</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1240063724351827970.html">1240063724351827970</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239987468553895938.html">1239987468553895938</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239926160915562500.html">1239926160915562500</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239905745086316549.html">1239905745086316549</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239902517846257673.html">1239902517846257673</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239875625684471808.html">1239875625684471808</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239872982228533248.html">1239872982228533248</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239872297860825089.html">1239872297860825089</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239848574634070017.html">1239848574634070017</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239837386852503554.html">1239837386852503554</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239835104974983169.html">1239835104974983169</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239513474247593984.html">1239513474247593984</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239498454155526149.html">1239498454155526149</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239298902710460416.html">1239298902710460416</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1239238522609061890.html">1239238522609061890</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238950235826720768.html">1238950235826720768</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238949230594711552.html">1238949230594711552</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238941237186564096.html">1238941237186564096</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238872842399252480.html">1238872842399252480</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238796070198673409.html">1238796070198673409</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238767796202455043.html">1238767796202455043</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238761580759826433.html">1238761580759826433</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238756593459703808.html">1238756593459703808</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238754552163307521.html">1238754552163307521</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238592208141508611.html">1238592208141508611</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238589992735301633.html">1238589992735301633</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238526870620180480.html">1238526870620180480</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238511299711176707.html">1238511299711176707</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238489798408617984.html">1238489798408617984</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238488967156301824.html">1238488967156301824</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238436224257478657.html">1238436224257478657</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238156597756559362.html">1238156597756559362</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1238117855675154433.html">1238117855675154433</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1237726529393774592.html">1237726529393774592</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1237699330779291649.html">1237699330779291649</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1237697599567773698.html">1237697599567773698</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1237413534130208769.html">1237413534130208769</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1237095442338512898.html">1237095442338512898</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1237073942613024768.html">1237073942613024768</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1237053142178639874.html">1237053142178639874</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236754711765811202.html">1236754711765811202</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236697428541288448.html">1236697428541288448</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236680134977085442.html">1236680134977085442</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236655360456429576.html">1236655360456429576</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236644685986377730.html">1236644685986377730</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236586128544878592.html">1236586128544878592</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236571635068649472.html">1236571635068649472</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236327067228221441.html">1236327067228221441</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236324491187404802.html">1236324491187404802</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236320170068586499.html">1236320170068586499</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236320048467390465.html">1236320048467390465</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236318544528322560.html">1236318544528322560</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236317621697593344.html">1236317621697593344</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236292369986830338.html">1236292369986830338</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236273423413850113.html">1236273423413850113</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236271741078568960.html">1236271741078568960</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236265212233297920.html">1236265212233297920</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236231654416543744.html">1236231654416543744</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1236217524150243329.html">1236217524150243329</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1235934065200685057.html">1235934065200685057</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1235897000928964608.html">1235897000928964608</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1235523258155331585.html">1235523258155331585</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1235514896118427648.html">1235514896118427648</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1235206208375705600.html">1235206208375705600</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1235136132985360385.html">1235136132985360385</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1234971712896163841.html">1234971712896163841</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1234940534340440064.html">1234940534340440064</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1234904060991549446.html">1234904060991549446</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1234840124178993152.html">1234840124178993152</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1234838689483763712.html">1234838689483763712</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1234788137186054144.html">1234788137186054144</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1234510990198345729.html">1234510990198345729</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1234226398207803393.html">1234226398207803393</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233821181607862274.html">1233821181607862274</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233798392972742657.html">1233798392972742657</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233770851360788481.html">1233770851360788481</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233758298014408706.html">1233758298014408706</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233745305310572544.html">1233745305310572544</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233731781423181825.html">1233731781423181825</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233462738187358210.html">1233462738187358210</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233453754952962052.html">1233453754952962052</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233419863869313025.html">1233419863869313025</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233419636185747458.html">1233419636185747458</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233330079662592002.html">1233330079662592002</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233327737185718272.html">1233327737185718272</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233109700448849923.html">1233109700448849923</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233103472721047552.html">1233103472721047552</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1233044382691024899.html">1233044382691024899</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1232990232083079168.html">1232990232083079168</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1232747598370476034.html">1232747598370476034</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1232707915410280448.html">1232707915410280448</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1232699821028335616.html">1232699821028335616</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1232419163790073862.html">1232419163790073862</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1232349254376730624.html">1232349254376730624</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1231908100266917889.html">1231908100266917889</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1231525768204869633.html">1231525768204869633</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1231309018607607810.html">1231309018607607810</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1231159447722086400.html">1231159447722086400</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1231153958762303489.html">1231153958762303489</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1230813429767819265.html">1230813429767819265</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1230557275535757314.html">1230557275535757314</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1230493188621832194.html">1230493188621832194</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1230206022075244544.html">1230206022075244544</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1229722228188733442.html">1229722228188733442</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1229719554881925121.html">1229719554881925121</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1229139000449011713.html">1229139000449011713</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1229135058117808130.html">1229135058117808130</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1229027252299497472.html">1229027252299497472</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1228612135086891009.html">1228612135086891009</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1228607962614304768.html">1228607962614304768</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1228458571903492097.html">1228458571903492097</a>
+			</div>
+		</div>
+		
+		<div class="col s6 m4 l2">
+			<div class="center card-panel white truncate">
+					<a href="/p/1228279612263800832.html">1228279612263800832</a>
+			</div>
+		</div>
 		
 		<div class="col s6 m4 l2">
 			<div class="center card-panel white truncate">
@@ -3054,9 +3946,51 @@
 </div>
 
 		</div>
-	</main><footer class="site-footer">
+	</main><footer class="page-footer sl-red">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Schwarzlicht</h5>
+        <p class="grey-text text-lighten-4">
+		Newsticker für Veranstaltungen & Mobilisierungen im Raum Würzburg.
+		</p>
+      </div>
+      <div class="col l4 offset-l2 s12 white-text">
+        <h5 class="white-text">Kanäle</h5>
+        <ul>
+		  <li>
+	<a class="footer-link" target="_blank" href="https://twitter.com/schwarzlichtwue">
+		<i class="fab fa-twitter"></i> Twitter
+	</a>
+</li>
+<li>
+	<a class="footer-link" target="_blank" href="https://facebook.com/schwarzlicht.wue">
+		<i class="fab fa-facebook"></i> Facebook
+	</a>
+</li>
+<li>
+	<a class="footer-link" target="_blank" href="https://www.instagram.com/schwarzlicht.wue/">
+		<i class="fab fa-instagram"></i> Instagram
+	</a>
+</li>
+<li>
+	<a class="footer-link" target="_blank" href="https://github.com/schwarzlichtwue">
+		<i class="fab fa-github"></i> GitHub
+	</a>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright sl-red">
+    <div class="container">
+    </div>
+  </div>
 </footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="/js/init.js"></script></body>
+<script src="/js/init.js"></script>
+</body>
 
 </html>
