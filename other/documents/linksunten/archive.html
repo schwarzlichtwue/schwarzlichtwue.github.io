@@ -26,8 +26,7 @@
 	    {% endif %}
 	    {% assign cYearLink = post.date | date: '/%Y' %}
 		<div class="collapsible-header">
-				<a href="{{cYearLink | prepend: "/archive" | prepend:
-						 site.baseurl}}">{{year}}</a>
+						 {{year}}
 		</div>
 		<div class="collapsible-body">
 			<ul class="collection">

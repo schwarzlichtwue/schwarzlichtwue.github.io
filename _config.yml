@@ -42,9 +42,9 @@ pagination:
 permalink: /p/:year-:month-:day-:title
 
 jekyll-archives:
-  enabled: [tags, year, month]
+  enabled: [tags, month]
   permalinks:
-    year:     '/archive/:year/'
+    #year:     '/archive/:year/'
     month:    '/archive/:year-:month/'
     #day:    '/archive/:year-:month-:day/'
     tag: '/t/:name/'
