@@ -136,9 +136,12 @@
                 telegram: "https://t.me/s/p4fwue"
                 whatsapp: "https://chat.whatsapp.com/BpCzq0CycO68IrVAw94WVk"
                 website: "https://parentsforfuture.de/de/wuerzburg"
-          - id: physiciansff
-            name: Physicians For Future
+          - id: psychologistsff
+            name: Psychologists For Future
             active: "true"
+            contact:
+                website: "https://wechange.de/project/psychologists-for-future-wuerzburg/"
+                mail: "mailto:wuerzburg@psychologistsforfuture.org"
           - id: eg
             name: Ende Gelände
             active: "true"
