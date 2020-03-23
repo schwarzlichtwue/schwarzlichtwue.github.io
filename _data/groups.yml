@@ -15,6 +15,7 @@
             name: Florakreis
             active: "true"
             logo: "/img/groups/florakreis/logo.png"
+            description: "Der Florakreis Würzburg ist ein Kreis politisch links orientierter Menschen mit verschiedenen Ausrichtungen. Benannt ist er nach der ehemaligen Gaststätte „Flora“ in der Sanderau, in der er gegründet wurde. Wichtig sind für uns Bündnisarbeit und Aufbau von vernetzten Strukturen zwischen den unterschiedlichen Gruppen der Demokratischen Linken."
             contact:
                 website: "http://florakreis.blogsport.de/"
           - id: akr
@@ -67,7 +68,7 @@
           - id: seebruecke
             name: Seebrücke
             active: "true"
-            description: "Eine bundesweite Bewegung gegen die Kriminalisiserung der Seenotrettung und für sichere Fluchtwege."
+            description: "Eine bundesweite Bewegung gegen die Kriminalisierung von Seenotrettung und für sichere Fluchtwege."
             logo: "/img/groups/seebruecke/logo.png"
             image: "/img/groups/seebruecke/image.jpg"
             contact:
