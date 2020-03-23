@@ -140,6 +140,7 @@
           - id: psychologistsff
             name: Psychologists For Future
             active: "true"
+            description: "Wir sind eine Gruppe von Psycholog*innen, Psychotherapeut*innen und Studierenden, die sich mit den Herausforderungen, die der Klimawandel an uns Menschen stellt, auseinandersetzt."
             contact:
                 website: "https://wechange.de/project/psychologists-for-future-wuerzburg/"
                 mail: "mailto:wuerzburg@psychologistsforfuture.org"
