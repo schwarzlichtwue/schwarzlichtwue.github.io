@@ -140,12 +140,12 @@ p {
 
 main a {
 	text-decoration: underline;
+	word-break: break-all;
 }
 
 a {
 	color: #7a001f;
 	text-decoration: none;
-	word-break: break-all;
 }
 
 a:hover {
