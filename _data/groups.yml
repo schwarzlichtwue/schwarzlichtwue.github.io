@@ -181,6 +181,7 @@
             name: Initiative Soziokulturelles Zentrum
             active: "true"
             image: "/img/groups/sozkuz/image.jpg"
+            description: "Die Initiative SozKuz ist auf der Suche nach unabhängigem, dringend benötigtem, zentral gelegenem, großflächigen Raum, um diesen Vereinen, Initiativen und Privatpersonen unentgeltlich zur Verfügung zu stellen, die dies bei horrenden Mieten und mangelnden Angeboten nicht mehr finden. Sie wollen einen Ort des sozialen und kulturellen Austausches schaffen, in dem auch Kunst ihren Platz findet."
             contact:
                 mail: "mailto:soziokulturelles-zentrum@riseup.net"
                 website: "https://sozkuzwue.wordpress.com/"
