@@ -133,6 +133,12 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.post-locations {
+	color: #777;
+	font-size: 80%;
+	font-family: 'Open Sans', sans-serif;
+}
+
 .post-category {
 		font-size: 80%;
 		font-family: 'Open Sans', sans-serif;
@@ -166,6 +172,13 @@ h2 a {
 
 h3 a {
 	text-decoration: none !important;
+}
+
+.location {
+	font-size: larger;
+	font-weight: bolder;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
 }
 
 .tag {
