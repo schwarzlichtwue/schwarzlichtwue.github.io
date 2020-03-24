@@ -140,6 +140,7 @@ p {
 
 main a {
 	text-decoration: underline;
+	word-break: break-all;
 }
 
 a {
