@@ -1,0 +1,60 @@
+<article class="post">
+	<header class="post-header">
+		<div class="post-meta">
+				<h2>
+					<a href="{{post.url}}.html">
+					Linksunten: {{ post.title }}
+					</a>
+				</h2>
+			{% if post.locations %}
+			<span class="post-locations">
+			{% for location in post.locations %}
+			{% include location.html %}
+			{% endfor %}
+			</span>
+			<br>
+			{% endif %}
+			<span class="post-date">{{ post.date | date: "%d.%m.%Y, %H:%M" }}</span>
+			{% if post.tags %}
+			<br>
+			<span class="post-category">
+				{% for tag in post.tags %}
+				{% include tag.html %}
+				{% endfor %}
+			</span>
+			{% endif %}
+		</div>
+	</header>
+	<div class="row post-content">
+		{{ post.content }}
+	</div>
+	<div class="section">
+		<div class="row">
+			{% for post_media in post.media %}
+			{% include media.html %}
+			{% endfor %}
+		</div>
+		{% if post.docs.size > 0 %}
+		<div class="row">
+			<h3>Dokumente</h3>
+			<ul class="collection">
+			{% for post_doc in post.docs %}
+			<li class="collection-item">
+			<a href="{{ post_doc.url }}">
+			{{ post_doc.desc }}
+			</a>
+			</li>
+			{% endfor %}
+			</div>
+		</div>
+		{% endif %}
+	</div>
+	<div class="right">
+		<a style="margin:5px" href="{{post.url}}.html"><i class="fas fa-share-alt-square"></i></a>
+		{% if post.categories contains "twitter" %}
+		<a href="{{ post.ref }}"><i class="fab fa-twitter"></i></a>
+		{% endif %}
+	</div>
+</article>
+<div class="divider">
+</div>
