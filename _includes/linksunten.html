@@ -48,12 +48,17 @@
 			</div>
 		</div>
 		{% endif %}
-	</div>
-	<div class="right">
-		<a style="margin:5px" href="{{post.url}}.html"><i class="fas fa-share-alt-square"></i></a>
-		{% if post.categories contains "twitter" %}
-		<a href="{{ post.ref }}"><i class="fab fa-twitter"></i></a>
+		{% if post.comments %}
+		<div class="row">
+				<h3>Kommentare</h3>
+				<div class="col s12">
+						{{post.comments}}
+				</div>
+		</div>
 		{% endif %}
+		<div class="right">
+			<a style="margin:5px" href="{{post.url}}.html"><i class="fas fa-share-alt-square"></i></a>
+		</div>
 	</div>
 </article>
 <div class="divider">
