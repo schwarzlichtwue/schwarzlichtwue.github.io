@@ -149,6 +149,10 @@ main a {
 	word-break: break-all;
 }
 
+blockquote {
+	word-break: break-all;
+}
+
 a {
 	color: #7a001f;
 	text-decoration: none;
