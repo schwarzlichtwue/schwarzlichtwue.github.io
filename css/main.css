@@ -4,84 +4,133 @@ main {
 body {
     background: #fff;
     color: #333;
-    font-family: 'Merriweather', serif;
+	font-family: 'Open Sans', sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-}
-
-footer {
-	font-family: 'Open Sans', sans-serif;
-	color: #ffffff !important;
+	font-size:1.2em;
+	hyphens: auto;
 }
 
 nav {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.footer-link {
+		.sidenav-link {
+			color: #7a001f !important;
+			font-size: 1rem;
+		}
+
+		.dropdown-link {
+			color: #7a001f !important;
+			font-size: 1rem;
+		}
+
+		.logo-link {
+			font-size: 1rem;
+		}
+		
+		.logo:hover {
+		    color: #ff6893 !important;
+		}
+		
+		.logo:visited {
+		    color: #fff !important;
+		}
+		
+		.logo {
+			position: absolute;
+			display: inline-block;
+			font-size: 2.1rem;
+			padding: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+footer {
 	color: #ffffff !important;
-	font-family: 'Open Sans', sans-serif;
 }
 
-.sidenav-link {
-	color: #7a001f !important;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1rem;
+		.footer-link {
+			color: #ffffff !important;
+		}
+
+article {
+	hyphens: auto;
+	font-family: 'Merriweather', serif;
 }
-.dropdown-link {
-	color: #7a001f !important;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1rem;
+
+article p {
+	line-height: 2;
+	font-size: 110%;
+}
+
+article a {
+	word-break: break-all;
+}
+
+blockquote p {
+	font-size: 1em !important;
+	line-height: 1.5 !important;
 }
 
 .breadcrumb::before {
 	color: #7a001f !important;
-	font-size: 1rem;
 }
 
 .breadcrumb {
 	color: #7a001f !important;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1rem;
 	text-transform: uppercase;
-}
-
-.logo-link {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1rem;
-}
-
-.logo:hover {
-    color: #ffffff !important;
-}
-
-.logo:visited {
-    color: #ffffff !important;
-}
-
-.logo {
-	font-family: 'Open Sans', sans-serif;
-	position: absolute;
-	display: inline-block;
-	font-size: 2.1rem;
-	padding: 0;
-	left: 50%;
-	transform: translateX(-50%);
 }
 
 .collapsible-header {
 	font-weight: bolder;
-	font-family: 'Open Sans', sans-serif;
 }
 .collection-item a {
-	font-family: 'Open Sans', sans-serif;
 	text-decoration: none !important;
 }
 
 .card-title {
 	font-weight: bolder;
-	font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (max-width: 992px) {
+
+		body {
+				font-size: 1 !important;
+		}
+		h1 {
+			font-size: 1.55em !important;
+			font-weight: bold;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		h2 {
+			font-size: 1.45em !important;
+			font-weight: bold;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		h3 {
+			font-size: 1.35em;
+			font-weight: bold;
+			font-family: 'Open Sans', sans-serif;
+		}
+		h4 {
+			font-size: 1.20em;
+			font-weight: bold;
+			font-family: 'Open Sans', sans-serif;
+		}
+		h5 {
+			font-size: 1.15em;
+			font-weight: bold;
+			font-family: 'Open Sans', sans-serif;
+		}
+		h6 {
+			font-size: 1.10em;
+			font-weight: bold;
+			font-family: 'Open Sans', sans-serif;
+		}
 }
 
 h1 {
@@ -118,8 +167,7 @@ h6 {
 }
 
 p {
-    margin-block-end: 0;
-    line-height: 1.4rem;
+    margin-block-end: auto;
 }
 
 .post {
@@ -140,17 +188,23 @@ p {
 }
 
 .post-category {
-		font-size: 80%;
-		font-family: 'Open Sans', sans-serif;
+	font-size: 80%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.location {
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+}
+
+.tag {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
 }
 
 main a {
 	text-decoration: underline;
-	word-break: break-all;
-}
-
-blockquote {
-	word-break: break-all;
 }
 
 a {
@@ -167,28 +221,27 @@ a:visited {
 }
 
 h1 a {
+	color: #333;
 	text-decoration: none !important;
+}
+h1 a:hover {
+	text-decoration: underline !important;
 }
 
 h2 a {
+	color: #333;
 	text-decoration: none !important;
+}
+h2 a:hover {
+	text-decoration: underline !important;
 }
 
 h3 a {
+	color: #333;
 	text-decoration: none !important;
 }
-
-.location {
-	font-size: larger;
-	font-weight: bolder;
-	font-family: 'Open Sans', sans-serif;
-	text-decoration: none;
-}
-
-.tag {
-	font-size: larger;
-	font-family: 'Open Sans', sans-serif;
-	text-decoration: none;
+h3 a:hover {
+	text-decoration: underline !important;
 }
 
 
@@ -201,7 +254,6 @@ h3 a {
 }
 
 .pagination li {
-	font-family: 'Open Sans', sans-serif;
 	font-size: smaller;
 	display:inline-block;
 	border-radius:15px;
