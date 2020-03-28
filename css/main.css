@@ -75,11 +75,11 @@ blockquote p {
 }
 
 .breadcrumb::before {
-	color: #7a001f !important;
+	color: #fff !important;
 }
 
 .breadcrumb {
-	color: #7a001f !important;
+	color: #fff !important;
 	text-transform: uppercase;
 }
 
@@ -97,7 +97,7 @@ blockquote p {
 @media only screen and (max-width: 992px) {
 
 		body {
-				font-size: 1 !important;
+				font-size: 1em !important;
 		}
 		h1 {
 			font-size: 1.55em !important;
