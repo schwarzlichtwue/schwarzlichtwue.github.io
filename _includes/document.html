@@ -1,33 +1,31 @@
 <article class="post">
-<header class="post-header">
-	<div class="post-meta">
-				<h2>
-					Dokument: {{ doc.title }}
-				</h2>
-		<span class="post-date">{{ doc.date | date: "%d.%m.%Y, %H:%M" }}</span>
-		<br>
-		<span class="post-category">
-			{% for tag in doc.tags %}
-			{% include tag.html %}
-			{% endfor %}
-		</span>
-	</div>
-</header>
-	<div class="section">
-		<div class="row post-content">
-			{{ doc.content }}
+	<header class="post-header">
+		<div class="post-meta">
+					<h2>
+						Dokument: {{ post.title }}
+					</h2>
+			<span class="post-date">{{ post.date | date: "%d.%m.%Y, %H:%M" }}</span>
+			<br>
+			<span class="post-category">
+				{% for tag in post.tags %}
+				{% include tag.html %}
+				{% endfor %}
+			</span>
 		</div>
-		{% if doc.media.size > 0 %}
+	</header>
+	<div class="row post-content">
+		{{ post.content }}
+	</div>
+	<div class="section">
 		<div class="row">
-			{% for post_media in doc.media %}
+			{% for post_media in post.media %}
 			{% include media.html %}
 			{% endfor %}
 		</div>
-		{% endif %}
-		{% if doc.docs.size > 0 %}
+		{% if post.docs.size > 0 %}
 		<div class="row">
 			<ul class="collection">
-			{% for doc_ref in doc.docs %}
+			{% for doc_ref in post.docs %}
 			<li class="collection-item">
 			<a href="{{ doc_ref.file }}">
 			{{ doc_ref.desc }}
@@ -38,5 +36,9 @@
 		</div>
 		{% endif %}
 	</div>
+	<div class="right">
+		<a style="margin:5px" href="{{post.url}}.html"><i class="fas fa-share-alt-square"></i></a>
+	</div>
 </article>
+<div class="divider">
 </div>
