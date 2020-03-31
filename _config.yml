@@ -28,6 +28,11 @@ theme: minima
 plugins:
   - jekyll-paginate-v2
   - jekyll-archives
+  - jekyll-minifier
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
 
 pagination:
         enabled: true
