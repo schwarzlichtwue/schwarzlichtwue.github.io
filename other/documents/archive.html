@@ -1,8 +1,0 @@
-<ul class="collection">
-	{% assign posts = site.posts | where: "categories", "document" %}
-	{% for post in posts %}
-	<li class="collection-item">
-		<a href="{{post.url}}.html">{{post.date | date: "%-d.%m.%Y" }}: {{post.title}}</a>
-	</li>
-	{% endfor %}
-</ul>

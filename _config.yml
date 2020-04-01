@@ -34,37 +34,4 @@ jekyll-minifier:
   uglifier_args:
     harmony: true
 
-pagination:
-        enabled: true
-        per_page: 16 # used to be 'paginate'
-        sort_reverse: true
-        title: ':title | :num/:max'
-        permalink: '/pages/:num/'
-
 permalink: /p/:year-:month-:day-:title
-
-jekyll-archives:
-  enabled: [tags, month]
-  permalinks:
-    #year:     '/archive/:year/'
-    month:    '/archive/:year-:month/'
-    #day:    '/archive/:year-:month-:day/'
-    tag: '/t/:name/'
-  layouts:
-    #category: category-archive
-    tag: tag-archive
-    #year: year-archive
-    month: month-archive
-    #day: day-archive
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
